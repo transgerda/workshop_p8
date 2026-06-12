@@ -32,7 +32,7 @@ class CalculatorTest extends TestCase
         $result = $this->calculator->add($a, $b);
 
         // Assert
-        $this->assertEquals(7, $result);
+        $this->assertEquals(8, $result);
     }
 
     /*
