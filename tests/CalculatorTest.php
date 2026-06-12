@@ -2,8 +2,8 @@
 
 namespace Tests;
 
-use PHPUnit\Framework\TestCase;
 use App\Calculator;
+use PHPUnit\Framework\TestCase;
 use InvalidArgumentException;
 
 class CalculatorTest extends TestCase

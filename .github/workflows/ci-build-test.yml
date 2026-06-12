@@ -26,7 +26,7 @@ jobs:
       - name: Run tests
         run: |
           mkdir -p test-results
-          compose test -- --log-junit test-results/junit.xml
+          composer test -- --log-junit test-results/junit.xml
 
       - name: Upload test results
         if: always()
