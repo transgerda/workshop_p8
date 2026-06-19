@@ -20,10 +20,10 @@ jobs:
 
       - name: Build image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/app:${{ steps.vars.outputs.VERSION }} .
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/app:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/calculator:${{ steps.vars.outputs.VERSION }} .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/calculator:latest .
 
       - name: Push image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/app:${{ steps.vars.outputs.VERSION }}
-          docker push ${{ secrets.DOCKER_USERNAME }}/app:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/calculator:${{ steps.vars.outputs.VERSION }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/calculator:latest
